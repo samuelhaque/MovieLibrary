@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<html>
+<head>
+	<title>Movies and Television Information</title>
+	<div id=titleID>
+	<h1>Something placeholdedr<br><p id="movLib" data-shadow-text="Text-Shadow">Movie Library</p><br> and more something</h1>
+	</div>
+	<!-- Initilize CSS/Bootstrap files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Initilize firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<!-- Begin Wrapper -->
+	<div id = "wrapper" class = "container">
+		<!-- User account selection -->
+			<div id="userSelection">
+				Please select the active user:
+					<select id = "item1" name = "Item1">
+					<option value="4">Guest</option>
+					</select>
+			</div>
+
+		<!-- Search Bar for Website that will be used to trigger AJAX requests -->
+		<form id="searchForm" class="col-md-12 col-lg-12 search-bar">
+			<input id="searchInput" type="text" name="search" placeholder="Search Movie/TV Show..">
+			<button type="submit" class="btn btn-info submit" id="submitId">Search</button>
+		</form> 
+		<!-- Error Div -->
+		<div id = "error" class="centered col-lg-12 col-md-12"></div>
+		<!-- Searched Title From OMDB -->
+		<div id="htmlTitle" class="col-lg-12 col-md-12"></div>
+
+		<!-- Button Containers -->
+	
+
+		<!-- Movie Trailer and poster container -->
+		<div class="col-md-12 col-lg-12 trailerPoster" id="somethingCool">
+			<!-- Trailer Player -->
+			<div class="col-md-8" id="playDiv"></div>	
+
+			<!-- Movie Poster -->
+			<div class="col-md-4 container-fluid poster" id="imgDiv"></div>	
+		</div>
+		
+		<!-- Rating and Plot Information -->
+		<div id="plotFormatting" class="col-md-12 col-sm-12 trailer"></div>
+		</div> 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/data.js"></script>
+	<script src="assets/javascript/main.js"></script>
+
+</body>
+</html>
